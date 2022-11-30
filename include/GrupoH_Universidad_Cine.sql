@@ -7,10 +7,9 @@ SELECT
     sexo as gender, 
     birth_dates as birth_date,
     NULL as age,
-    l.codigo_postal as postal_code, 
+    NULL as postal_code, 
     locations as location, 
     emails as email
-FROM lat_sociales_cine lsc, localidad l 
-where l.localidad = REPLACE(lsc.locations  , '-', ' ')
+FROM lat_sociales_cine lsc
 and universities = 'UNIVERSIDAD-DEL-CINE'  
 and to_date(inscription_dates, 'DD-MM-YYYY') between to_date('01-09-2020','DD-MM-YYY') and to_date('01-02-2021','DD-MM-YYY');
