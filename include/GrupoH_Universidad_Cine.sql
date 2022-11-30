@@ -1,6 +1,14 @@
-SELECT universities as university, careers as career, to_date(inscription_dates, 'DD-MM-YYYY') as inscription_date, split_part(names,'-',1) as first_name,
-split_part(names,'-',2) as last_name, sexo as gender, date_part('year', age(now(), to_date(birth_dates, 'DD-MM-YYYY'))) as age,
-l.codigo_postal as postal_code, locations as location, emails as email
+SELECT 
+    upper(trim(replace(universities,'-',' '))) as university,
+    upper(trim(replace(careers,'-',' '))) as career, 
+    to_date(inscription_dates, 'DD-MM-YYYY') as inscription_date, 
+    split_part(names,'-',1) as first_name,
+    split_part(names,'-',2) as last_name, 
+    sexo as gender, 
+    date_part('year', age(now(), to_date(birth_dates, 'DD-MM-YYYY'))) as age,
+    l.codigo_postal as postal_code, 
+    upper(trim(replace(locations,'-',' '))) as location, 
+    emails as email
 FROM lat_sociales_cine lsc, localidad l 
 where l.localidad = REPLACE(lsc.locations  , '-', ' ')
 and universities = 'UNIVERSIDAD-DEL-CINE' 
