@@ -1,6 +1,23 @@
+import os
+import logging
+#ariflow imports
 from airflow import DAG
 from airflow.operators.empty import EmptyOperator
+from airflow.operators.python import PythonOperator
 from datetime import timedelta, datetime
+
+os.chdir('/opt/airflow/dags')
+university = 'GEAUInteramericana'
+logger = logging.getLogger(university)
+logger.setLevel('INFO')
+logPath = f'./logs/{university}.log'
+fileHandler = logging.FileHandler(filename=logPath, delay=True)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
+fileHandler.setFormatter(formatter)
+logger.addHandler(fileHandler)
+
+def extraction():
+    logger.info('test')
 
 default_args = {
     'retries': '5',
@@ -13,7 +30,10 @@ with DAG(
     schedule= '@hourly',
     start_date= datetime(2022, 11, 28)
 ) as dag:
-    extract = EmptyOperator(task_id='Extract') #pythonOperator > postgresOperator/ postgresHook ?
+    extract = PythonOperator(
+        task_id='Extract',
+        python_callable=extraction
+        )
     transform = EmptyOperator(task_id='Transform') #pythonOperator?
     load = EmptyOperator(task_id='load') #pythonOperator > s3Hook
     extract >> transform >> load
