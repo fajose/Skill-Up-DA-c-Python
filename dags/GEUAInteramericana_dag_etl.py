@@ -6,7 +6,7 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from datetime import timedelta, datetime
 
-os.chdir('/opt/airflow/dags')
+os.chdir('./dags')
 university = 'GEAUInteramericana'
 logger = logging.getLogger(university)
 logger.setLevel('INFO')
@@ -17,7 +17,7 @@ fileHandler.setFormatter(formatter)
 logger.addHandler(fileHandler)
 
 def extraction():
-    logger.info('test')
+    pass
 
 default_args = {
     'retries': '5',

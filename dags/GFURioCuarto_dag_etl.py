@@ -6,7 +6,7 @@ from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from datetime import timedelta, datetime
 
-os.chdir('/opt/airflow/dags')
+os.chdir('./dags')
 university = 'GFURioCuarto'
 logger = logging.getLogger(university)
 logger.setLevel('INFO')
