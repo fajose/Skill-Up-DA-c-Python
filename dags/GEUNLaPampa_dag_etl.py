@@ -32,6 +32,9 @@ def extraction():
     connection.close()
     logger.info('Extraction finished without errors')
 
+def transformation():
+    pass
+
 default_args = {
     'retries': '5',
     'retry_delay': timedelta(minutes=5),
@@ -47,6 +50,9 @@ with DAG(
         task_id='Extract',
         python_callable=extraction
         )
-    transform = EmptyOperator(task_id='Transform') #pythonOperator?
+    transform = PythonOperator(
+        task_id='transfrom',
+        python_callable=transformation
+    )
     load = EmptyOperator(task_id='load') #pythonOperator > s3Hook
     extract >> transform >> load
