@@ -12,7 +12,7 @@ from airflow.decorators import dag, task
 
 
 default_args = {
-    "owner": "P3",
+    "owner": "Kevin Marcos Agui Manera",
     "retries": 5,
     "retry_delay": timedelta(minutes=1),
 }
@@ -40,3 +40,8 @@ with DAG(
             logging.info('Tarea de extraccion EXITOSA')
         except:
             logging.info('ERROR al extraer')
+            
+    Extraccion()
+            
+    
+     
