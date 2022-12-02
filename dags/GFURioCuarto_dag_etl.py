@@ -22,6 +22,7 @@ logger.addHandler(fileHandler)
 POSTGRES_ID = "alkemy_db"
 
 def extraction():
+    logger.info('Beggining of ETL extraction')
     with open('./include/GrupoF_rio_cuarto_universidad.sql', 'r', encoding='utf-8') as sqlFile:
         sqlQuery = sqlFile.read()
     hook = PostgresHook(postgres_conn_id=POSTGRES_ID)
@@ -29,6 +30,7 @@ def extraction():
     df = hook.get_pandas_df(sql=sqlQuery)
     df.to_csv(path_or_buf=f'./files/{university}.csv')
     connection.close()
+    logger.info('Extraction finished without errors')
 
 default_args = {
     'retries': '5',
