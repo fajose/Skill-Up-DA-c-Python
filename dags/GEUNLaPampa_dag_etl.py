@@ -36,6 +36,7 @@ def transformation():
     pass
 
 default_args = {
+    'owner': 'Leandro Serra',
     'retries': '5',
     'retry_delay': timedelta(minutes=5),
 }
