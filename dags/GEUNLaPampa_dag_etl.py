@@ -1,23 +1,34 @@
-import os
 import logging
+import pandas as pd
 #ariflow imports
 from airflow import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
+from airflow.providers.postgres.hooks.postgres import PostgresHook
 from datetime import timedelta, datetime
 
-os.chdir('./dags')
 university = 'GEUNLaPampa'
+
+#logger config
 logger = logging.getLogger(university)
 logger.setLevel('INFO')
-logPath = f'./logs/{university}.log'
+logPath = f'./dags/logs/{university}.log'
 fileHandler = logging.FileHandler(filename=logPath, delay=True)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(message)s')
 fileHandler.setFormatter(formatter)
 logger.addHandler(fileHandler)
 
+# Connection with database
+POSTGRES_ID = "alkemy_db"
+
 def extraction():
-    pass
+    with open('./include/GrupoE_la_pampa_universidad.sql', 'r', encoding='utf-8') as sqlFile:
+        sqlQuery = sqlFile.read()
+    hook = PostgresHook(postgres_conn_id=POSTGRES_ID)
+    connection = hook.get_conn()
+    df = hook.get_pandas_df(sql=sqlQuery)
+    df.to_csv(path_or_buf=f'./files/{university}.csv')
+    connection.close()
 
 default_args = {
     'retries': '5',
