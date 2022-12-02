@@ -27,7 +27,7 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    with open("dags/sql/GrupoB_comahue_universidad.sql", 'r') as myfile:
+    with open("include/GrupoB_comahue_universidad.sql", 'r') as myfile:
         data = myfile.read()
         print(data)
     
@@ -36,7 +36,7 @@ with DAG(
         try:
             hook = PostgresHook(postgres_conn_id="alkemy_db")
             df = hook.get_pandas_df(sql=data)
-            df.to_csv("dags/files/G1UNComahue.csv")
+            df.to_csv("files/G1UNComahue.csv")
             logging.info('Tarea de extraccion EXITOSA')
         except:
             logging.info('ERROR al extraer')
