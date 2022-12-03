@@ -1,0 +1,2 @@
+SELECT universidad AS university, carrera AS career, fecha_de_inscripcion AS inscription_date, nombre AS first_name, NULL AS last_name, sexo AS gender, fecha_nacimiento AS fecha_nacimiento, NULL AS age, NULL AS postal_code, localidad  AS location, email as email FROM salvador_villa_maria 
+WHERE universidad = 'UNIVERSIDAD_NACIONAL_DE_VILLA_MARÍA' and TO_DATE(fecha_de_inscripcion, 'DD/Mon/YY') BETWEEN '2019-01-01' AND '2020-08-01';
