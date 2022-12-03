@@ -19,15 +19,15 @@ default_args = {
 
 # Instantiate DAG
 with DAG(
-    dag_id="G1UNFlores_dag_etl",
-    start_date=datetime(2022, 12, 1),
+    dag_id="G1UNVilla_maria_dag_etl",
+    start_date=datetime(2022, 12, 2),
     max_active_runs=5,
     schedule_interval="@hourly",
     default_args=default_args,
     catchup=False,
 ) as dag:
 
-    with open("dags/sql/flores_universidad.sql", 'r') as myfile:
+    with open("include/GrupoA_villa_maria_universidad.sql", 'r') as myfile:
         data = myfile.read()
         print(data)
     
@@ -36,12 +36,9 @@ with DAG(
         try:
             hook = PostgresHook(postgres_conn_id="alkemy_db")
             df = hook.get_pandas_df(sql=data)
-            df.to_csv("dags/files/G1UNFlores.csv")
+            df.to_csv("files/G1UNVilla_maria.csv")
             logging.info('Tarea de extraccion EXITOSA')
         except:
             logging.info('ERROR al extraer')
             
     Extraccion()
-            
-    
-     

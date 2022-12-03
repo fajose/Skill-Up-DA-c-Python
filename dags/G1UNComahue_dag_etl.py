@@ -19,7 +19,7 @@ default_args = {
 
 # Instantiate DAG
 with DAG(
-    dag_id="G1UNFlores_dag_etl",
+    dag_id="G1UNComahue_dag_etl",
     start_date=datetime(2022, 12, 1),
     max_active_runs=5,
     schedule_interval="@hourly",
@@ -27,7 +27,7 @@ with DAG(
     catchup=False,
 ) as dag:
 
-    with open("dags/sql/flores_universidad.sql", 'r') as myfile:
+    with open("include/GrupoB_comahue_universidad.sql", 'r') as myfile:
         data = myfile.read()
         print(data)
     
@@ -36,12 +36,9 @@ with DAG(
         try:
             hook = PostgresHook(postgres_conn_id="alkemy_db")
             df = hook.get_pandas_df(sql=data)
-            df.to_csv("dags/files/G1UNFlores.csv")
+            df.to_csv("files/G1UNComahue.csv")
             logging.info('Tarea de extraccion EXITOSA')
         except:
             logging.info('ERROR al extraer')
             
     Extraccion()
-            
-    
-     
