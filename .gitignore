@@ -5,7 +5,6 @@
 astro
 */__pycache__/
 .astro/*
-airflow_settings.yaml
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,windows,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,python
