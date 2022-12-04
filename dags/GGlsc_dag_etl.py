@@ -4,7 +4,7 @@ from airflow.decorators import task
 from datetime import datetime, timedelta
 from helper_functions import logger_setup
 from helper_functions.utils import *
-from helper_functions.transforming import transformation
+from helper_functions.transforming import transformer
 from helper_functions.extracting import extraction
 import pandas as pd
 
@@ -18,7 +18,8 @@ logger = logger_setup.logger_creation(university)
 # Definimos el DAG
 with DAG(f'{university}_dag_etl',
          default_args=default_args,
-         catchup=False
+         catchup=False,
+         schedule_interval='@hourly'
          ) as dag:      
     
     # Extracción de Datos
@@ -38,7 +39,8 @@ with DAG(f'{university}_dag_etl',
         logger.info('Inicia proceso de transformación de los datos')
 
         try:
-            transformation(university)
+            df_transformer = transformer(university)
+            df_transformer.transformation()
             logger.info('Se creo archivo csv con la información transformada')
             
         except Exception as e:

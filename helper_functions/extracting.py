@@ -7,8 +7,8 @@ def extraction(university):
         sql_script = f.read()
 
     # Inicia el hook a Postgres para conectar a la base de datos
-    hook = PostgresHook(postgres_conn_id="alkemy")
+    hook = PostgresHook(postgres_conn_id="alkemy_db")
 
     # Se crea el dataframe y lo exporta a la carpeta files
     df = hook.get_pandas_df(sql=sql_script)
-    df.to_csv(f"./files/{university}.csv")
+    df.to_csv(f"./files/{university}_select.csv")

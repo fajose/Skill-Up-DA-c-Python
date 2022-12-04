@@ -6,6 +6,5 @@ default_args = {
     'start_date': datetime(2022, 12, 1),
     'retries': 5,
     'retry_delay': timedelta(seconds=10),
-    'description':"Dag para la extracción, transformación y cargue de la información de la facultad latinoamericana de Ciencias Sociales",
-    'schedule_interval':'@hourly'
+    'description':"Dag para la extracción, transformación y cargue de la información de la facultad latinoamericana de Ciencias Sociales"
 }
