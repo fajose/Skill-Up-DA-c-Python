@@ -1,42 +1,55 @@
 from airflow import DAG
-from airflow.operators.python import PythonOperator
-from airflow.providers.postgres.hooks.postgres import PostgresHook
+from airflow.decorators import task
 
-from datetime import timedelta, datetime
-import os
-from pathlib import Path
+from datetime import datetime, timedelta
+from helper_functions import logger_setup
+from helper_functions.transforming import transformation
+from helper_functions.extracting import extraction
 import pandas as pd
 
-# Connection with database
-POSTGRES_ID = "alkemy_db"
-AWS_ID = "aws_s3_bucket"
+# Universidad
+university = 'GrupoC_jujuy_universidad'
 
-def extraction():
-    query = ""
-    with open("./include/GrupoC_jujuy_universidad.sql", "r", encoding='utf-8') as database:
-        query = database.read()
-    hook = PostgresHook(postgres_conn_id=POSTGRES_ID)
-    conection = hook.get_conn()
-    df = hook.get_pandas_df(sql=query)    
-    df.to_csv('./files/GC_UNJujuy_select.csv', index=False)
-    conection.close()
+# Default args de airflow
+default_args = {
+    'owner': 'Gastón Orphant',
+    'start_date': datetime(2022, 12, 1),
+    'retries': 5,
+    'retry_delay': timedelta(seconds=10),
+    'description':'Dag para la extracción, transformación y carga de la información de la Universidad Nacional de Jujuy',
+    'schedule_interval':'@hourly'
+}
 
-def processing_with_pandas():
-    df = pd.read_csv('./files/GC_UNJujuy_select.csv', index_col=False)
+# Configuracion del logger
+logger = logger_setup.logger_creation(university)
+
+# Definimos el DAG
+with DAG(f'{university}_dag_etl',
+         default_args=default_args,
+         catchup=False
+         ) as dag:      
     
-def upload_to_AWS():
-    pass
+    # Extracción de Datos
+    @task()
+    def extract():
+        logger.info('Inicio de proceso de extracción')
+        try:
+            extraction(university)
+            logger.info("Se creo el csv con la información de la universidad")
 
-with DAG(
-    'GCUNJujuy_dag_ETL',
-    description='GRUPO C ETL de Universidad de Jujuy',
-    schedule_interval= timedelta(days=1),
-    start_date= datetime(2022, 12, 1),  
-) as dag:
-
-    extraccion = PythonOperator(task_id="extraccion", python_callable=extraction)
-    procesamiento = PythonOperator(task_id="procesamiento", python_callable=processing_with_pandas)
-    subida = PythonOperator(task_id="subida", python_callable=upload_to_AWS)
-
+        except Exception as e:
+            logger.error(e)
     
-    extraccion >> procesamiento >> subida
+    # Transformación de Datos
+    @task()
+    def transform():
+        logger.info('Inicia proceso de transformación de los datos')
+
+        try:
+            transformation(university)
+            logger.info('Se creo archivo csv con la información transformada')
+            
+        except Exception as e:
+            logger.error(e)
+    
+    extract() >> transform()
