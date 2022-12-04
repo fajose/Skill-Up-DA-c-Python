@@ -10,7 +10,7 @@ import pandas as pd
 
 
 # Universidad
-university = 'GrupoIMoron2'
+university = 'GrupoI_Moron2'
 
 # Configuracion del logger
 logger = logger_setup.logger_creation(university)
