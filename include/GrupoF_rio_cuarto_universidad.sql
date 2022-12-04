@@ -5,7 +5,7 @@ select  univiersities as university,
         null as last_name,
         sexo as gender,
         fechas_nacimiento as birth_date,
-        null as agem
+        null as age,
         null as postal_code,
         localidad as location,
         email as email 
