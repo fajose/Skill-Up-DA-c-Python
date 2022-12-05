@@ -1,5 +1,3 @@
-ERROR - Object of type PlainXComArg is not JSON serializable. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your airflow config or make sure to decorate your object with attr.
-
 # Proyecto #1 Flujos de ejecución
 ## Descripción
 Client: Ministerio de Educación de la Nación
