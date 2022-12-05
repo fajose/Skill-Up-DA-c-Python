@@ -172,7 +172,7 @@
 170,universidad j. f. kennedy,licenciatura en ciencias de la educación,2020-12-09,william,warren,male,82,2802,lomas del rio lujan,laurenquinn@hotmail.com
 171,universidad j. f. kennedy,licenciatura en musicoterapia,2020-12-15,lori,hoffman,female,8,8208,campo cicare,savagedaniel@hotmail.com
 172,universidad j. f. kennedy,licenciatura en musicoterapia,2021-01-18,jacob,diaz,male,39,2115,colonia valdez,hlee@yahoo.com
-173,universidad j. f. kennedy,licenciatura en ciencias biológicas,2020-09-14,dawn,poole,female,55,8373,alianza,scottjenkins@hotmail.com
+173,universidad j. f. kennedy,licenciatura en ciencias biológicas,2020-09-14,dawn,poole,female,56,8373,alianza,scottjenkins@hotmail.com
 174,universidad j. f. kennedy,licenciatura en ciencia y tecnología de alimentos,2020-12-12,tim,craig,male,4,6407,girodias,masonheather@yahoo.com
 175,universidad j. f. kennedy,bioquímica,2020-11-13,curtis,villarreal,male,61,2500,cañada de gomez,curryautumn@gmail.com
 176,universidad j. f. kennedy,licenciatura en ciencias de la computación,2020-11-02,alejandra,vargas,female,42,2617,sancti spiritu,tinanelson@yahoo.com
@@ -409,7 +409,7 @@
 407,universidad j. f. kennedy,ingeniería mecánica,2020-10-24,christopher,stephens,male,65,7513,adolfo gonzales chaves,huntwilliam@gmail.com
 408,universidad j. f. kennedy,ciencias veterinarias,2020-12-17,maria,gross,female,63,2848,berisso,luislawrence@gmail.com
 409,universidad j. f. kennedy,licenciatura en ciencia política,2021-01-11,abigail,moore,female,42,6330,arturo almaraz,josephthomas@hotmail.com
-410,universidad j. f. kennedy,ingeniería mecánica,2020-10-21,lori,mosley,female,75,1901,estacion moreno,hortiz@gmail.com
+410,universidad j. f. kennedy,ingeniería mecánica,2020-10-21,lori,mosley,female,76,1901,estacion moreno,hortiz@gmail.com
 411,universidad j. f. kennedy,ciencias veterinarias,2021-02-01,desiree,moreno,female,33,5449,aguango,ohodges@gmail.com
 412,universidad j. f. kennedy,medicina,2021-02-01,janet,schmidt,female,14,1765,isidro casanova,creed@hotmail.com
 413,universidad j. f. kennedy,licenciatura en ciencias ambientales,2020-11-03,katherine,arnold,female,18,5407,dique toma,danielstevens@yahoo.com
@@ -434,7 +434,7 @@
 432,universidad j. f. kennedy,técnico para bioterios,2020-12-05,dawn,espinoza,female,3,5411,la legua,ljones@yahoo.com
 433,universidad j. f. kennedy,licenciatura en ciencia política,2020-09-05,susan,bennett,female,5,1614,villa de mayo,brittany12@hotmail.com
 434,universidad j. f. kennedy,licenciatura en kinesiología y fisiatría,2020-10-10,adriana,martinez,female,51,6321,caichue,juan43@hotmail.com
-435,universidad j. f. kennedy,arquitectura,2020-10-07,christopher,walsh,male,13,7261,saladillo norte,amy90@yahoo.com
+435,universidad j. f. kennedy,arquitectura,2020-10-07,christopher,walsh,male,14,7261,saladillo norte,amy90@yahoo.com
 436,universidad j. f. kennedy,actuario,2020-10-13,aaron,miller,male,1,8000,adela corti,jasonburns@yahoo.com
 437,universidad j. f. kennedy,ingeniería mecánica,2020-12-24,megan,savage,female,76,3350,apostoles,parkkatie@gmail.com
 438,universidad j. f. kennedy,licenciatura en ciencias ambientales,2020-12-20,alison,cox,female,1,4624,abra mayo,lisa59@gmail.com
@@ -763,7 +763,7 @@
 761,universidad j. f. kennedy,ingeniería en informática,2020-10-19,steven,nguyen,male,63,9300,cañadon de las vacas,nhogan@gmail.com
 762,universidad j. f. kennedy,farmacia,2020-11-01,jennifer,parker,female,20,3483,arroyo balmaceda,kevingood@yahoo.com
 763,universidad j. f. kennedy,licenciatura en administración,2020-11-15,benjamin,chen,male,6,8336,gobernador duval,heather71@hotmail.com
-764,universidad j. f. kennedy,licenciatura en kinesiología y fisiatría,2020-12-11,russell,williams,male,25,9009,cañadon lagarto,munozisabella@hotmail.com
+764,universidad j. f. kennedy,licenciatura en kinesiología y fisiatría,2020-12-11,russell,williams,male,26,9009,cañadon lagarto,munozisabella@hotmail.com
 765,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-11-01,sean,blevins,male,3,8303,cinco saltos,umiles@yahoo.com
 766,universidad j. f. kennedy,farmacia,2020-12-04,eric,greene,male,41,6301,ataliva roca,romerotaylor@yahoo.com
 767,universidad j. f. kennedy,contador público,2020-11-24,john,garcia,male,29,4164,bajastine,anita82@hotmail.com
@@ -1009,7 +1009,7 @@
 1007,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-12-27,herbert,holloway,male,3,4715,agua verde,meganlynch@yahoo.com
 1008,universidad j. f. kennedy,licenciatura en musicoterapia,2020-10-29,christopher,dawson,male,8,9033,aldea apeleg,abigaillong@hotmail.com
 1009,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-10-19,kirsten,pratt,female,30,7116,camaron chico,greenstephen@yahoo.com
-1010,universidad j. f. kennedy,licenciatura en ciencias geológicas,2020-12-15,tammy,miller,female,16,5319,colpes,chandlerdiana@yahoo.com
+1010,universidad j. f. kennedy,licenciatura en ciencias geológicas,2020-12-15,tammy,miller,female,17,5319,colpes,chandlerdiana@yahoo.com
 1011,universidad j. f. kennedy,actuario,2020-09-05,jonathan,hays,male,44,7633,maori,angel90@yahoo.com
 1012,universidad j. f. kennedy,licenciatura en terapia ocupacional,2020-11-21,james,brown,male,84,4135,caspinchango,robinsonmorgan@yahoo.com
 1013,universidad j. f. kennedy,licenciatura en terapia ocupacional,2020-09-29,jennifer,aguilar,female,83,2208,gaboto,danielmartinez@yahoo.com
