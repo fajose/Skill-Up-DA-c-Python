@@ -16,8 +16,7 @@ default_args = {
     'start_date': datetime(2022, 12, 1),
     'retries': 5,
     'retry_delay': timedelta(seconds=10),
-    'description':'Dag para la extracción, transformación y carga de la información de la Universidad Nacional de Jujuy',
-    'schedule_interval':'@hourly'
+    'description':'Dag para la extracción, transformación y carga de la información de la Universidad Nacional de Jujuy'
 }
 
 # Configuracion del logger
@@ -38,7 +37,8 @@ def extract():
 # Definimos el DAG
 with DAG(f'{university}_dag_etl',
          default_args=default_args,
-         catchup=False
+         catchup=False,
+         schedule_interval='@hourly'
          ) as dag:      
     
     extraccion = PythonOperator(task_id = 'extraccion', python_callable=extract)
