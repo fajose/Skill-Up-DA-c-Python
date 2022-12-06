@@ -6,4 +6,3 @@ services:
       - ./datasets:/usr/local/airflow/datasets:rw
       - ./assets:/usr/local/airflow/assets:rw
       - ./dags/logs:/usr/local/airflow/dags/logs:rw
-      - ./helper_functions:/usr/local/airflow/helper_functions:rw

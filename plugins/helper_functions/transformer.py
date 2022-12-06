@@ -1,6 +1,6 @@
 import pandas as pd
 
-class transformer():
+class Transformer():
     date_formats = {
         'GrupoG_Kennedy':'%y-%b-%d',
         'GrupoG_lsc':'%d-%m-%Y',
@@ -8,10 +8,11 @@ class transformer():
         'GrupoH_UBA': '%y-%b-%d'
     }
 
-    def __init__(self, university):
+    def __init__(self, university, logger=None):
         self.university = university
         self.df = pd.read_csv(f"./files/{university}_select.csv", index_col=0)
         self.date_format = self.date_formats[university]
+        self.logger = logger
 
     def column_processor(self):
         columns_to_transform = ['university', 'career', 'first_name', 'last_name', 'email']
@@ -75,14 +76,29 @@ class transformer():
             self.df = self.df.merge(postal_df, how='left', left_on='postal_code', right_on='codigo_postal')
             self.df.rename(columns = {'localidad':'location'}, inplace = True)
     
-    def transformation(self):
-        self.name_parsing()  
-        self.column_processor()  
-        self.gender_parsing() 
-        self.date_parser()
-        self.calculate_age()
-        self.parse_locations()
+    def to_transform(self):
+        if self.logger:
+            self.logger.info('Inicia proceso de transformación de los datos')
 
-        self.df = self.df[['university', 'career', 'inscription_date', 'first_name', 'last_name', 'gender', 'age', 'postal_code', 'location', 'email']]
+        try:
+            self.name_parsing()  
+            self.column_processor()  
+            self.gender_parsing() 
+            self.date_parser()
+            self.calculate_age()
+            self.parse_locations()
 
-        self.df.to_csv(f'./datasets/{self.university}_transformed.txt')
+            self.df = self.df[['university', 'career', 'inscription_date', 'first_name', 'last_name', 'gender', 'age', 'postal_code', 'location', 'email']]
+
+            self.df.to_csv(f'./datasets/{self.university}_process.txt')
+
+            if self.logger:
+                self.logger.info('Se creo archivo csv con la información transformada')
+            
+        except Exception as e:
+            self.logger.info('ERROR al transformar los datos')
+            self.logger.error(e)
+
+
+
+    

@@ -519,7 +519,7 @@
 517,universidad j. f. kennedy,licenciatura en artes,2021-01-30,patrick,guerrero,male,48,5707,aguaditas,darrell64@gmail.com
 518,universidad j. f. kennedy,arquitectura,2020-12-07,noah,fuller,male,47,5463,alto huaco,alexpeck@hotmail.com
 519,universidad j. f. kennedy,licenciatura en psicología,2020-09-26,lauren,harris,female,17,1878,quilmes,kroberts@yahoo.com
-520,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-09-07,renee,suarez,female,24,3543,colonia lote 12,uzuniga@hotmail.com
+520,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-09-07,renee,suarez,female,25,3543,colonia lote 12,uzuniga@hotmail.com
 521,universidad j. f. kennedy,licenciatura en ciencias de la computación,2020-12-05,howard,bell,male,83,9300,cañadon de las vacas,jerrysheppard@yahoo.com
 522,universidad j. f. kennedy,diseño de imagen y sonido,2020-11-19,linda,clements,female,57,3311,arroyo isabel,michelle68@yahoo.com
 523,universidad j. f. kennedy,licenciatura en ciencias geológicas,2020-10-23,stephanie,carpenter,female,71,1888,florencio varela,travisrodriguez@yahoo.com
@@ -979,7 +979,7 @@
 977,universidad j. f. kennedy,bioquímica,2021-01-17,jacob,moore,male,32,8334,ingeniero huergo,mary39@gmail.com
 978,universidad j. f. kennedy,licenciatura en ciencias de la educación,2020-12-20,donald,deleon,male,84,4603,catamontaña,christinewhite@yahoo.com
 979,universidad j. f. kennedy,licenciatura en ciencias de la computación,2020-11-07,trevor,diaz,male,98,7220,funke,perrykristy@yahoo.com
-980,universidad j. f. kennedy,medicina,2020-11-15,robert,bradford,male,97,9037,aldea beleiro,hwells@hotmail.com
+980,universidad j. f. kennedy,medicina,2020-11-15,robert,bradford,male,98,9037,aldea beleiro,hwells@hotmail.com
 981,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-11-20,daniel,johnston,male,64,5751,agua salada,brian99@yahoo.com
 982,universidad j. f. kennedy,licenciatura en ciencias de la educación,2021-01-11,amanda,bond,female,90,5601,capitan montoya,ramireztimothy@yahoo.com
 983,universidad j. f. kennedy,ciencias veterinarias,2021-01-15,shawn,thomas,male,78,6555,alfalad,robinsonscott@hotmail.com
@@ -1177,7 +1177,7 @@
 1175,universidad j. f. kennedy,diseño industrial,2020-10-01,crystal,durham,female,1,8340,aguada florencio,erinchapman@gmail.com
 1176,universidad j. f. kennedy,ingeniería mecánica,2020-10-27,crystal,schmidt,female,4,5545,agua de diaz,johnsonrachel@hotmail.com
 1177,universidad j. f. kennedy,licenciatura en terapia ocupacional,2021-01-29,anna,ashley,female,7,5460,agua de la zorra,dunnandrea@yahoo.com
-1178,universidad j. f. kennedy,diseño industrial,2020-09-18,christopher,schultz,male,3,9100,cerro santa ana,sabrina17@yahoo.com
+1178,universidad j. f. kennedy,diseño industrial,2020-09-18,christopher,schultz,male,4,9100,cerro santa ana,sabrina17@yahoo.com
 1179,universidad j. f. kennedy,ciencias veterinarias,2020-11-30,thomas,mcintosh,male,75,3056,campo coubert,mmccullough@gmail.com
 1180,universidad j. f. kennedy,licenciatura en artes,2020-12-02,lisa,james,female,89,7130,caminera samborombon,jduke@yahoo.com
 1181,universidad j. f. kennedy,licenciatura en producción de bioimagenes,2020-10-06,luis,bailey,male,44,3044,gobernador crespo,plee@gmail.com
@@ -1696,7 +1696,7 @@
 1694,universidad j. f. kennedy,licenciatura en administración,2021-01-21,dawn,austin,female,5,8402,dina huapi,csullivan@hotmail.com
 1695,universidad j. f. kennedy,licenciatura en artes,2020-12-11,daniel,turner,male,96,5405,agua y energia,underwoodmeredith@gmail.com
 1696,universidad j. f. kennedy,licenciatura en psicología,2020-12-06,david,green,male,62,4234,achalco,calderondavid@hotmail.com
-1697,universidad j. f. kennedy,licenciatura en psicología,2020-11-09,taylor,garner,male,71,6073,el triunfo,jirwin@hotmail.com
+1697,universidad j. f. kennedy,licenciatura en psicología,2020-11-09,taylor,garner,male,72,6073,el triunfo,jirwin@hotmail.com
 1698,universidad j. f. kennedy,arquitectura,2020-09-07,nathan,bennett,male,75,5601,capitan montoya,daniel23@hotmail.com
 1699,universidad j. f. kennedy,licenciatura en ciencias geológicas,2020-11-18,david,morgan,male,70,6434,palantelen,lopezmichelle@gmail.com
 1700,universidad j. f. kennedy,diseño industrial,2021-01-20,kenneth,morris,male,63,3158,20 de septiembre,anthony29@yahoo.com

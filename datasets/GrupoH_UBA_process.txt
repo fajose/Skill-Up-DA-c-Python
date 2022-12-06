@@ -449,7 +449,7 @@
 447,universidad de buenos aires,licenciatura en artes,2020-09-05,michael,hanson,male,13,4139,agua amarilla la hoyada,danielle07@hotmail.com
 448,universidad de buenos aires,licenciatura en ciencias de la educación,2020-10-02,jennifer,wright,female,11,1895,arturo segui,nlane@hotmail.com
 449,universidad de buenos aires,licenciatura en ciencia política,2020-09-12,stephen,russell,male,75,3317,arroyo magdalena,fischerjoshua@yahoo.com
-450,universidad de buenos aires,licenciatura en ciencias de la computación,2020-11-02,miss,andrea,female,75,2633,chovet,kelsey01@hotmail.com
+450,universidad de buenos aires,licenciatura en ciencias de la computación,2020-11-02,miss,andrea,female,76,2633,chovet,kelsey01@hotmail.com
 451,universidad de buenos aires,licenciatura en terapia ocupacional,2021-01-18,donald,vasquez,male,38,2123,campo calvo,mark31@yahoo.com
 452,universidad de buenos aires,licenciatura en musicoterapia,2020-10-07,andrea,sanchez,female,44,6435,guamini,crystal35@yahoo.com
 453,universidad de buenos aires,licenciatura en ciencias biológicas,2020-11-19,shane,parker,male,35,3351,azara,yingram@hotmail.com
@@ -539,7 +539,7 @@
 537,universidad de buenos aires,licenciatura en sociología,2021-01-13,evelyn,smith,female,86,3105,diamante,cbowen@gmail.com
 538,universidad de buenos aires,bioquímica,2020-12-10,angela,ramos,female,26,4622,bella vista,richard57@gmail.com
 539,universidad de buenos aires,ingeniería en informática,2020-10-28,brent,ingram,male,48,6207,alta italia,jameswolfe@hotmail.com
-540,universidad de buenos aires,licenciatura en ciencias de la educación,2020-09-27,gary,vargas,male,62,5351,banda florida,gsweeney@hotmail.com
+540,universidad de buenos aires,licenciatura en ciencias de la educación,2020-09-27,gary,vargas,male,63,5351,banda florida,gsweeney@hotmail.com
 541,universidad de buenos aires,licenciatura en producción de bioimagenes,2021-01-28,megan,torres,female,25,9021,colhue huapi,nicole48@yahoo.com
 542,universidad de buenos aires,licenciatura en musicoterapia,2020-10-11,renee,pearson,female,91,2253,campo gimenez,bsimmons@yahoo.com
 543,universidad de buenos aires,contador público,2020-12-05,eric,miller,male,47,4230,brea chimpana,uwall@hotmail.com
@@ -625,7 +625,7 @@
 623,universidad de buenos aires,medicina,2020-11-21,mary,harvey,female,2,8185,campo del norte americano,garrisondarlene@yahoo.com
 624,universidad de buenos aires,licenciatura en ciencias de la computación,2020-09-25,kim,stokes,female,69,3316,arroyo pastora,andersongary@yahoo.com
 625,universidad de buenos aires,ingeniería electrónica,2020-09-20,marie,french,female,8,7150,ayacucho,across@gmail.com
-626,universidad de buenos aires,ingeniería electrónica,2020-09-08,jennifer,thompson,female,13,4186,cañete,gomezveronica@yahoo.com
+626,universidad de buenos aires,ingeniería electrónica,2020-09-08,jennifer,thompson,female,14,4186,cañete,gomezveronica@yahoo.com
 627,universidad de buenos aires,licenciatura en artes,2021-01-31,harold,bradford,male,3,8361,isla grande,mcdonaldjohn@yahoo.com
 628,universidad de buenos aires,licenciatura en kinesiología y fisiatría,2020-10-31,alexander,moran,male,5,6430,adolfo alsina,ddiaz@hotmail.com
 629,universidad de buenos aires,licenciatura en ciencias de la educación,2020-10-22,gregory,castro,male,22,3734,campo moreno,amberdeleon@gmail.com
@@ -1765,13 +1765,13 @@
 1763,universidad de buenos aires,licenciatura en ciencias biológicas,2021-01-23,russell,johnson,male,48,2170,candelaria sud,mthompson@gmail.com
 1764,universidad de buenos aires,licenciatura en ciencias ambientales,2021-01-05,deanna,thompson,female,9,3476,el remanso,stanleylewis@hotmail.com
 1765,universidad de buenos aires,arquitectura,2020-09-24,david,guerrero,male,20,4724,agua colorada,heatherhogan@gmail.com
-1766,universidad de buenos aires,licenciatura en ciencia política,2020-10-10,russell,phelps,male,42,5443,algarrobo verde,irichardson@gmail.com
+1766,universidad de buenos aires,licenciatura en ciencia política,2020-10-10,russell,phelps,male,43,5443,algarrobo verde,irichardson@gmail.com
 1767,universidad de buenos aires,licenciatura en kinesiología y fisiatría,2020-09-02,robert,gates,male,3,5713,balde ahumada,guerrerokim@yahoo.com
 1768,universidad de buenos aires,licenciatura en ciencia y tecnología de alimentos,2020-09-07,derrick,andrews,male,81,3700,barrio gral jose de san martin,nbrown@gmail.com
 1769,universidad de buenos aires,diseño industrial,2020-11-20,michael,beltran,male,60,5443,algarrobo verde,william55@gmail.com
 1770,universidad de buenos aires,licenciatura en planificación y diseño del paisaje,2020-12-10,christian,wyatt,male,89,3555,campo huber,stephanie52@gmail.com
 1771,universidad de buenos aires,licenciatura en psicología,2020-11-12,david,ellis,male,11,7307,crotto,karla27@gmail.com
-1772,universidad de buenos aires,diseño industrial,2020-12-05,julie,stein,female,47,8360,buena esperanza,danielle57@yahoo.com
+1772,universidad de buenos aires,diseño industrial,2020-12-05,julie,stein,female,48,8360,buena esperanza,danielle57@yahoo.com
 1773,universidad de buenos aires,técnico para bioterios,2021-01-15,brandi,bishop,female,69,5755,alto del molle,kiara65@yahoo.com
 1774,universidad de buenos aires,licenciatura en ciencias antropológicas,2020-10-07,brenda,smith,female,51,3231,colonia arocena ina,wsalinas@yahoo.com
 1775,universidad de buenos aires,ciencias veterinarias,2020-11-25,brenda,brooks,female,83,6465,coraceros,samantha87@hotmail.com

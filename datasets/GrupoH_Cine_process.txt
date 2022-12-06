@@ -532,7 +532,7 @@
 530,universidad del cine,licenciatura en ciencia y tecnología de alimentos,2020-10-28,michael,hunter,male,20,4705,aguadita,lmiles@hotmail.com
 531,universidad del cine,contador público,2021-01-19,raymond,rodriguez,male,21,3423,arañita,sydney92@hotmail.com
 532,universidad del cine,licenciatura en musicoterapia,2020-09-24,christopher,jones,male,64,2123,campo calvo,mirandaross@yahoo.com
-533,universidad del cine,licenciatura en terapia ocupacional,2020-10-22,jordan,hall,female,19,2347,colonia mackinlay,gturner@yahoo.com
+533,universidad del cine,licenciatura en terapia ocupacional,2020-10-22,jordan,hall,female,20,2347,colonia mackinlay,gturner@yahoo.com
 534,universidad del cine,ingeniería mecánica,2020-11-04,aaron,stark,male,49,1927,esc nav militar rio sant,hansendana@hotmail.com
 535,universidad del cine,licenciatura en ciencias geológicas,2020-12-11,timothy,floyd,male,107,2535,el trebol,iallen@hotmail.com
 536,universidad del cine,bioquímica,2020-09-04,travis,roberts,male,31,2812,capilla del señor,jesse68@gmail.com
@@ -908,7 +908,7 @@
 906,universidad del cine,agronomía,2021-01-28,heather,gutierrez,female,9,3328,colonia japonesa,iclay@yahoo.com
 907,universidad del cine,licenciatura en ciencias biológicas,2020-12-15,christopher,flowers,male,34,3125,antonio tomas,thomasbrandy@yahoo.com
 908,universidad del cine,licenciatura en planificación y diseño del paisaje,2020-09-23,christopher,fisher,male,62,6461,capitan castro,jennawilliams@hotmail.com
-909,universidad del cine,diseño de imagen y sonido,2020-11-13,nathan,davis,male,86,5311,arauco,robertmartinez@hotmail.com
+909,universidad del cine,diseño de imagen y sonido,2020-11-13,nathan,davis,male,87,5311,arauco,robertmartinez@hotmail.com
 910,universidad del cine,diseño de imagen y sonido,2020-11-26,david,martin,male,40,3009,el tropezon,hammondjamie@gmail.com
 911,universidad del cine,ingeniería en informática,2020-11-13,brittney,jones,female,78,5313,estacion mazan,rogersalyssa@gmail.com
 912,universidad del cine,contador público,2021-01-07,andrew,lopez,male,40,6017,chancay,steven99@yahoo.com
@@ -1142,7 +1142,7 @@
 1140,universidad del cine,actuario,2020-11-18,stephanie,martin,female,92,6515,carlos maria naon,amber76@gmail.com
 1141,universidad del cine,licenciatura en terapia ocupacional,2021-01-12,joseph,rodriguez,male,18,4643,antiguyos,stevenmiller@yahoo.com
 1142,universidad del cine,licenciatura en terapia ocupacional,2020-11-14,stephanie,vang,female,52,2930,la buana moza,paigejackson@yahoo.com
-1143,universidad del cine,arquitectura,2021-01-20,laura,travis,female,4,7107,santa teresita,howardkenneth@yahoo.com
+1143,universidad del cine,arquitectura,2021-01-20,laura,travis,female,5,7107,santa teresita,howardkenneth@yahoo.com
 1144,universidad del cine,ingeniería electrónica,2020-11-14,timothy,johnson,male,94,4187,anta chica,taylorjerry@hotmail.com
 1145,universidad del cine,agronomía,2020-09-24,joshua,sims,male,31,5421,la tranca,dzimmerman@yahoo.com
 1146,universidad del cine,licenciatura en gestión de agroalimentos,2020-10-14,randall,james,male,17,2142,campo medina,chad96@hotmail.com
@@ -1395,7 +1395,7 @@
 1393,universidad del cine,licenciatura en producción de bioimagenes,2020-11-06,john,mcknight,male,77,6700,caminera lujan,jennifer49@gmail.com
 1394,universidad del cine,licenciatura en kinesiología y fisiatría,2021-01-25,kevin,carroll,male,73,4168,agua blanca,manuel05@gmail.com
 1395,universidad del cine,licenciatura en ciencias de la computación,2021-01-01,sharon,scott,female,47,6743,coliqueo,martinrandall@hotmail.com
-1396,universidad del cine,licenciatura en administración,2020-10-15,tracy,cantrell,female,59,1885,guillermo e hudson,daniellelewis@yahoo.com
+1396,universidad del cine,licenciatura en administración,2020-10-15,tracy,cantrell,female,60,1885,guillermo e hudson,daniellelewis@yahoo.com
 1397,universidad del cine,licenciatura en administración,2021-02-01,krista,ryan,female,41,6101,villa saboya,bdrake@gmail.com
 1398,universidad del cine,farmacia,2020-12-22,lisa,tucker,female,113,6557,arboleda,tuckerkimberly@yahoo.com
 1399,universidad del cine,diseño industrial,2020-11-04,stuart,cline,male,45,3342,aguapey,flemingdennis@yahoo.com
@@ -1409,7 +1409,7 @@
 1407,universidad del cine,ciencias veterinarias,2020-12-08,jose,hoffman,male,18,7541,d orbigny,zacharymurphy@gmail.com
 1408,universidad del cine,bioquímica,2020-09-04,sharon,dawson,female,42,4624,abra mayo,rojasmichael@hotmail.com
 1409,universidad del cine,licenciatura en planificación y diseño del paisaje,2021-01-26,tracy,williams,female,65,5709,bañadito viejo,hmcbride@yahoo.com
-1410,universidad del cine,licenciatura en terapia ocupacional,2020-09-30,ashley,wright,female,16,8318,challaco,william52@yahoo.com
+1410,universidad del cine,licenciatura en terapia ocupacional,2020-09-30,ashley,wright,female,17,8318,challaco,william52@yahoo.com
 1411,universidad del cine,técnico para bioterios,2020-11-01,david,carroll,male,83,4633,san pedro de iruya,jonathan09@hotmail.com
 1412,universidad del cine,medicina,2020-11-01,richard,santos,male,15,2000,villa angelica,yball@gmail.com
 1413,universidad del cine,licenciatura en terapia ocupacional,2021-01-06,lauren,smith,female,25,2322,cabaña el cisne,stricklandcraig@yahoo.com
@@ -1482,7 +1482,7 @@
 1480,universidad del cine,licenciatura en gestión de agroalimentos,2021-01-28,katherine,church,female,114,4741,agua de las palomas,april05@yahoo.com
 1481,universidad del cine,licenciatura en gestión de agroalimentos,2020-09-02,miranda,henry,female,70,6443,arano,annawhite@hotmail.com
 1482,universidad del cine,técnico para bioterios,2020-12-09,stacey,rowland,female,92,3550,allende,damonporter@gmail.com
-1483,universidad del cine,licenciatura en ciencias antropológicas,2021-01-03,joseph,anderson,male,59,6242,drabble,tinasellers@hotmail.com
+1483,universidad del cine,licenciatura en ciencias antropológicas,2021-01-03,joseph,anderson,male,60,6242,drabble,tinasellers@hotmail.com
 1484,universidad del cine,ingeniería en informática,2020-12-03,sherri,anderson,female,51,8504,cantera villalonga,david90@yahoo.com
 1485,universidad del cine,ingeniería en informática,2020-12-29,kara,hubbard,female,79,8322,cutral co,gregorybryant@hotmail.com
 1486,universidad del cine,licenciatura en ciencias de la educación,2020-11-02,andrew,phillips,male,57,8340,aguada florencio,thomasthomas@hotmail.com
@@ -1726,7 +1726,7 @@
 1724,universidad del cine,licenciatura en relaciones del trabajo,2020-09-04,danielle,mullen,female,37,4186,cañete,christinejohnson@hotmail.com
 1725,universidad del cine,licenciatura en psicología,2020-12-13,haley,olson,female,101,6022,la oriental,lisablake@hotmail.com
 1726,universidad del cine,ingeniería electrónica,2020-10-09,carly,martinez,female,8,3230,arbol solo,brooke18@gmail.com
-1727,universidad del cine,licenciatura en kinesiología y fisiatría,2020-10-24,trevor,brown,male,53,2804,campana,jeanette68@gmail.com
+1727,universidad del cine,licenciatura en kinesiología y fisiatría,2020-10-24,trevor,brown,male,54,2804,campana,jeanette68@gmail.com
 1728,universidad del cine,licenciatura en relaciones del trabajo,2020-11-23,george,higgins,male,42,9211,cushamen,melissadavis@gmail.com
 1729,universidad del cine,licenciatura en ciencias antropológicas,2020-10-24,sara,snyder,female,88,4164,bajastine,vchang@hotmail.com
 1730,universidad del cine,licenciatura en ciencias antropológicas,2021-01-02,craig,smith,male,8,5276,baldes de pacheco,timothyrobles@yahoo.com
