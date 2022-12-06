@@ -1,17 +1,12 @@
-import logging
 from airflow import DAG
 from airflow.decorators import task
-from datetime import datetime, timedelta
+from datetime import datetime
 from helper_functions import logger_setup
 from helper_functions.extracting import extraction
 from helper_functions.utils import *
 from helper_functions.loader import *
 import pandas as pd
 import numpy as np
-import csv
-import boto3
-import os
-from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.providers.amazon.aws.transfers.local_to_s3 import LocalFilesystemToS3Operator
 from airflow.operators.python import PythonOperator
 
@@ -20,6 +15,9 @@ university = 'GrupoJ_Villa_maria2'
 
 # Configuracion del logger
 logger = logger_setup.logger_creation(university)
+
+# Conexion a s3
+S3_ID = "aws_s3_bucket"
 
 # Definimos el DAG
 with DAG(f'{university}_dag_etl',
@@ -44,7 +42,7 @@ with DAG(f'{university}_dag_etl',
 
         logger.info("Transforming data")
         
-        df = pd.read_csv('files/GrupoJ_Villa_maria2_select.csv', index_col=0)
+        df = pd.read_csv(f'files/{university}_select.csv', index_col=0)
         df['university'] = df['university'].str.lower().str.replace('_',' ').str.strip()
         df['career'] = df['career'].str.lower().str.replace('_',' ').str.strip()
         df['first_name'] = df['first_name'].str.lower().str.replace('_',' ').str.strip().str.replace('(m[r|s]|[.])|(\smd\s)', '', regex=True)
@@ -62,7 +60,7 @@ with DAG(f'{university}_dag_etl',
         
         df = df.drop(columns='fecha_nacimiento')
         
-        dfCod = pd.read_csv('assets/codigos_postales.csv',sep=',')
+        dfCod = pd.read_csv('./assets/codigos_postales.csv',sep=',')
         dfCod = dfCod.drop_duplicates(['localidad'], keep='last')
             
         dfC = df['postal_code']
@@ -87,39 +85,20 @@ with DAG(f'{university}_dag_etl',
         
         df = df[['university', 'career', 'inscription_date', 'first_name', 'gender', 'age', 'postal_code', 'location', 'email']]
         
-        df.to_csv('./datasets/GrupoJ_Villa_maria2_process.txt', sep='\t', index=False)
+        df.to_csv(f'./datasets/{university}_process.txt', sep='\t', index=False)
         
         logger.info("Data succesfully transformed")
         logger.info("Loading data to s3 bucket...")
 
-    @task()
-    def load(**kwargd):
-        df_loader = Loader(university, logger)
-        df_loader.to_load()
+    load = LocalFilesystemToS3Operator(
+        task_id='load',
+        filename=f'./datasets/{university}_process.txt',
+        dest_key=f'{university}_process.txt',
+        dest_bucket='alkemy26',
+        aws_conn_id=S3_ID,
+        replace=True
+    )
 
     
-    extract() >> transform() >> load()
+    extract() >> transform() >> load
 
-with DAG(
-    "GrupoA_flores_universidad_dag_etl",
-    start_date=datetime(2022, 12, 4),
-    schedule_interval="@hourly",
-    default_args={
-        "retries": 5
-    },
-    catchup=False,
-) as dag:
-
-    extract = PythonOperator(
-        task_id="extract",
-        python_callable=extract
-    )
-
-    transform = PythonOperator(
-        task_id="transform",
-        python_callable = transform
-    )
-
-    load = PythonOperator(
-        task_id="load",
-        python_callable = load )
