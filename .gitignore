@@ -249,4 +249,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
+GrupoA_flores_universidad_dag_etl.py
+loader.py
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,macos,windows,python
