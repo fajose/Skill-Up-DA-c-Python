@@ -1,5 +1,6 @@
 from airflow import DAG
 from airflow.decorators import task
+from airflow.providers.amazon.aws.transfers.local_to_s3 import LocalFilesystemToS3Operator
 
 from datetime import datetime
 from helper_functions import logger_setup
@@ -13,6 +14,9 @@ university = 'GrupoI_Jujuy2'
 
 # Configuracion del logger
 logger = logger_setup.logger_creation(university)
+
+# Conexion a S3
+S3_ID = "aws_s3_bucket"
 
 # Definimos el DAG
 with DAG(f'{university}_dag_etl',
@@ -92,5 +96,14 @@ with DAG(f'{university}_dag_etl',
         data = data.loc[:,~data.columns.str.contains('X')]# drop columna vacía
 
         data.to_csv(f'./datasets/{university}_process.txt', index=False, sep='\t')
+
+    load = LocalFilesystemToS3Operator(
+        task_id='load',
+        filename=f'./datasets/{university}_process.txt',
+        dest_key=f'{university}_process.txt',
+        dest_bucket='alkemy26',
+        aws_conn_id=S3_ID,
+        replace=True
+    )
     
-    extract() >> transform()
+    extract() >> transform() >> load
