@@ -6,8 +6,8 @@ from airflow.operators.python import PythonOperator
 from airflow.providers.postgres.hooks.postgres import PostgresHook
 from datetime import timedelta, datetime
 #helper functions imports
-from helper_functions.logger_setup import logger_creation
-from helper_functions.extracting import extraction
+from plugins.helper_functions.logger_setup import logger_creation
+from plugins.helper_functions.extracting import extraction
 
 university = 'GrupoE_la_pampa_universidad'
 
