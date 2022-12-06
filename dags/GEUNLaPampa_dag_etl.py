@@ -90,5 +90,12 @@ with DAG(
         task_id='transfrom',
         python_callable=transform
     )
-    load = EmptyOperator(task_id='load') #pythonOperator > s3Hook
+    load = LocalFilesystemToS3Operator(
+        task_id='load',
+        filename=f'./datasets/{university}_process.txt',
+        dest_key=f'{university}_process.txt',
+        dest_bucket='alkemy26',
+        aws_conn_id=S3_ID,
+        replace=True
+    )
     extract >> transform >> load
