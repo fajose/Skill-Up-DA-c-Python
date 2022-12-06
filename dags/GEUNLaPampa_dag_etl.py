@@ -2,9 +2,7 @@ from datetime import timedelta, datetime
 import pandas as pd
 #ariflow imports
 from airflow import DAG
-from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
-from airflow.providers.postgres.hooks.postgres import PostgresHook
 from airflow.providers.amazon.aws.transfers.local_to_s3 import LocalFilesystemToS3Operator
 #helper functions imports
 from helper_functions.logger_setup import logger_creation
