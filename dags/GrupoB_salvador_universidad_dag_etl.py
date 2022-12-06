@@ -82,8 +82,16 @@ with DAG(f'{university}_dag_etl',
             df.career = df.career.str.strip()
             df.career = df.career.str.lower()
 
-            df['age'] = df['fecha_nacimiento']
-            df = df.drop(['fecha_nacimiento'], axis=1)
+            df['fecha_nacimiento'] = pd.to_datetime(df['fecha_nacimiento'])
+   
+            today = datetime.now()
+        
+            df['age'] = np.floor((today - df['fecha_nacimiento']).dt.days / 365)
+            df['age'] = df['age'].apply(lambda x: x if (x > 18.0) and (x < 80) else -1)
+            df['age'] = np.where(df['age']== -1, 21, df['age'])
+            df['age'] = df['age'].astype(int)
+        
+            df = df.drop(columns='fecha_nacimiento')
 
             df.university = df.university.astype(str)
             df.career = df.career.astype(str)
