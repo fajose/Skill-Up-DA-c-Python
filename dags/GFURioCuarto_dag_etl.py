@@ -17,7 +17,7 @@ logger = logger_creation(university)
 
 # Connection with database
 POSTGRES_ID = "alkemy_db"
-S3_ID = "s3_bucket"
+S3_ID = "aws_s3_bucket"
 
 def calculateAge(birthDate:datetime):
     today = datetime.today()
