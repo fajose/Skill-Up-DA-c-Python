@@ -1,25 +1,19 @@
-import boto3
+from airflow.providers.amazon.aws.transfers.local_to_s3 import LocalFilesystemToS3Operator
 
 class Loader:
     def __init__(self, university, logger=None) -> None:
         self.university = university
         self.logger = logger
-
-    def loading(self):
-        ACCESS_KEY = ""
-        SECRET_ACCESS_KEY = ""
-
-        session = boto3.Session(
-            aws_access_key_id=ACCESS_KEY,
-            aws_secret_access_key=SECRET_ACCESS_KEY,
+        self.S3_ID = "aws_s3_bucket"
+        
+        self.loading = LocalFilesystemToS3Operator(
+            task_id='load',
+            filename=f'./datasets/{self.university}_process.txt',
+            dest_key=f'{self.university}_process.txt',
+            dest_bucket='alkemy26',
+            aws_conn_id=self.S3_ID,
+            replace=True
         )
-
-        s3 = session.resource("s3")
-        data = open(f'./datasets/{self.university}_process.txt','rb')
-        s3.Bucket('alkemy26').put_object(
-            Key=f'{self.university}_process.txt', Body=data
-            )
-
 
     def to_load(self):
         if self.logger:
