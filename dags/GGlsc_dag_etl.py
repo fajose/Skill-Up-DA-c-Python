@@ -1,12 +1,11 @@
 from airflow import DAG
 from airflow.decorators import task
 
-from datetime import datetime, timedelta
-from helper_functions import logger_setup
-from helper_functions.utils import *
-from helper_functions.transforming import transformer
-from helper_functions.extracting import extraction
-import pandas as pd
+from plugins.helper_functions import logger_setup
+from plugins.helper_functions.utils import *
+from plugins.helper_functions.transformer import Transformer
+from plugins.helper_functions.extractor import Extractor
+from plugins.helper_functions.loader import Loader
 
 
 # Universidad
@@ -24,26 +23,19 @@ with DAG(f'{university}_dag_etl',
     
     # Extracción de Datos
     @task()
-    def extract():
-        logger.info('Inicio de proceso de extracción')
-        try:
-            extraction(university)
-            logger.info("Se creo el csv con la información de la universidad")
-
-        except Exception as e:
-            logger.error(e)
+    def extract(**kwargd):
+        df_extractor = Extractor(university, logger)
+        df_extractor.to_extract()
     
     # Transformación de Datos
     @task()
-    def transform():
-        logger.info('Inicia proceso de transformación de los datos')
+    def transform(**kwargd):
+        df_transformer = Transformer(university, logger)
+        df_transformer.to_transform()
 
-        try:
-            df_transformer = transformer(university)
-            df_transformer.transformation()
-            logger.info('Se creo archivo csv con la información transformada')
-            
-        except Exception as e:
-            logger.error(e)
+    @task()
+    def load(**kwargd):
+        df_loader = Loader(university, logger)
+        df_loader.to_load()
     
-    extract() >> transform()
+    extract() >> transform() >> load()

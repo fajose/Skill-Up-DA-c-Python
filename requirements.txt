@@ -8,3 +8,5 @@ pytz==2022.6
 six==1.16.0
 SQLAlchemy==1.4.44
 zope.interface==5.5.2
+boto3==1.26.23
+
