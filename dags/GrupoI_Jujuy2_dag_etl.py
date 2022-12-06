@@ -34,6 +34,7 @@ with DAG(f'{university}_dag_etl',
 
         except Exception as e:
             logger.error(e)
+            raise
     
     # Transformación de Datos
     @task()
