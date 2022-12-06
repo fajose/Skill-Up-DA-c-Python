@@ -15,9 +15,9 @@ class Loader:
         )
 
         s3 = session.resource("s3")
-        data = open(f'./datasets/{self.university}_processed.txt','rb')
+        data = open(f'./datasets/{self.university}_process.txt','rb')
         s3.Bucket('alkemy26').put_object(
-            Key=f'{self.university}_processed.txt', Body=data
+            Key=f'{self.university}_process.txt', Body=data
             )
 
 
