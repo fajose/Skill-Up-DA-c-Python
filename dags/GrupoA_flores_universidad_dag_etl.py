@@ -93,23 +93,8 @@ with DAG(f'{university}_dag_etl',
 
     @task()
     def load(**kwargd):
-
-        try:
-            ACCESS_KEY = "AKIA2AY2D764PBLL5IPT"
-            SECRET_ACCESS_KEY = "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"
-            session = boto3.Session(
-                aws_access_key_id=ACCESS_KEY,
-                aws_secret_access_key=SECRET_ACCESS_KEY,
-            )
-            s3 = session.resource("s3")
-            data = open("./datasets/GrupoA_flores_universidad_process.txt","rb")
-            s3.Bucket("alkemy26").put_object(
-                Key="GrupoA_flores_universidad_process.txt", Body=data
-            )
-
-            logging.info('Tarea de carga EXITOSA')
-        except:
-            logging.info('ERROR al cargar')
+        df_loader = Loader(university, logger)
+        df_loader.to_load()
 
     
     extract() >> transform() >> load()
