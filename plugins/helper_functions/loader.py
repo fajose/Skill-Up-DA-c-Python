@@ -1,25 +1,26 @@
-import boto3
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
 class Loader:
     def __init__(self, university, logger=None) -> None:
         self.university = university
         self.logger = logger
 
+        self.S3_ID = "aws_s3_bucket"
+        self.dest_bucket = 'alkemy26'
+        self.path = './datasets/'
+        self.key = f'{self.university}_process.txt'
+        
     def loading(self):
-        ACCESS_KEY = ""
-        SECRET_ACCESS_KEY = ""
+        s3_hook = S3Hook(aws_conn_id=self.S3_ID)
 
-        session = boto3.Session(
-            aws_access_key_id=ACCESS_KEY,
-            aws_secret_access_key=SECRET_ACCESS_KEY,
+        s3_hook.load_file(
+            self.path + self.key,
+            key=self.key,
+            bucket_name=self.dest_bucket,
+            replace=True,
+            encrypt=False,
+            gzip=False,
         )
-
-        s3 = session.resource("s3")
-        data = open(f'./datasets/{self.university}_process.txt','rb')
-        s3.Bucket('alkemy26').put_object(
-            Key=f'{self.university}_process.txt', Body=data
-            )
-
 
     def to_load(self):
         if self.logger:

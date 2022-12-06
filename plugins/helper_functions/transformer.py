@@ -93,7 +93,7 @@ class Transformer():
             self.df.to_csv(f'./datasets/{self.university}_process.txt')
 
             if self.logger:
-                self.logger.info('Se creo archivo csv con la información transformada')
+                self.logger.info('Se creo archivo txt con la información transformada')
             
         except Exception as e:
             self.logger.info('ERROR al transformar los datos')

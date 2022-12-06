@@ -2,7 +2,7 @@ from airflow.providers.postgres.hooks.postgres import PostgresHook
 
 class Extractor:
     def __init__(self, university, logger=None) -> None:
-        self.universitu = university
+        self.university = university
         self.logger = logger
 
     def extraction(self):     
