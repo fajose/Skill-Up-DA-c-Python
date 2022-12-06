@@ -6,8 +6,8 @@ class Loader:
         self.logger = logger
 
     def loading(self):
-        ACCESS_KEY = "AKIA2AY2D764PBLL5IPT"
-        SECRET_ACCESS_KEY = "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"
+        ACCESS_KEY = ""
+        SECRET_ACCESS_KEY = ""
 
         session = boto3.Session(
             aws_access_key_id=ACCESS_KEY,
