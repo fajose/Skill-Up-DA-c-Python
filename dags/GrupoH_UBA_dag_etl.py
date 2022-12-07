@@ -10,6 +10,10 @@ from plugins.helper_functions.loader import Loader
 
 # Universidad
 university = 'GrupoH_UBA'
+db_conn = 'alkemy_db'
+date_format = '%y-%b-%d'
+aws_conn = 'aws_s3_bucket'
+dest_bucket = 'alkemy26'
 
 # Configuracion del logger
 logger = logger_setup.logger_creation(university)
@@ -24,18 +28,18 @@ with DAG(f'{university}_dag_etl',
     # Extracción de Datos
     @task()
     def extract(**kwargd):
-        df_extractor = Extractor(university, logger)
+        df_extractor = Extractor(university, logger=logger, db_conn=db_conn)
         df_extractor.to_extract()
     
     # Transformación de Datos
     @task()
     def transform(**kwargd):
-        df_transformer = Transformer(university, logger)
+        df_transformer = Transformer(university, logger=logger, date_format=date_format)
         df_transformer.to_transform()
 
     @task()
     def load(**kwargd):
-        df_loader = Loader(university, logger)
+        df_loader = Loader(university, logger=logger, S3_ID=aws_conn, dest_bucket=dest_bucket)
         df_loader.to_load()
     
     extract() >> transform() >> load()

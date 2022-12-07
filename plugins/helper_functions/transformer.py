@@ -8,10 +8,24 @@ class Transformer():
         'GrupoH_UBA': '%y-%b-%d'
     }
 
-    def __init__(self, university, logger=None):
+    def __init__(
+        self,
+        university,
+        logger=None,
+        import_path='./files/',
+        export_path='./datasets/',
+        date_format=None
+        ):
+
         self.university = university
-        self.df = pd.read_csv(f"./files/{university}_select.csv", index_col=0)
-        self.date_format = self.date_formats[university]
+        self.df = pd.read_csv(import_path + f"{university}_select.csv", index_col=0)
+        self.export_path = export_path
+
+        if date_format:
+            self.date_format = date_format
+        else:
+            self.date_format = self.date_formats[university]
+
         self.logger = logger
 
     def column_processor(self):
@@ -90,7 +104,7 @@ class Transformer():
 
             self.df = self.df[['university', 'career', 'inscription_date', 'first_name', 'last_name', 'gender', 'age', 'postal_code', 'location', 'email']]
 
-            self.df.to_csv(f'./datasets/{self.university}_process.txt')
+            self.df.to_csv(self.export_path + f'{self.university}_process.txt')
 
             if self.logger:
                 self.logger.info('Se creo archivo txt con la información transformada')

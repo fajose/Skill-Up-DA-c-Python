@@ -223,7 +223,7 @@
 221,facultad latinoamericana de ciencias sociales,licenciatura en ciencias antropológicas,2020-12-15,paul,newman,male,101,3041,cacique ariacaiquin,jennifer96@gmail.com
 222,facultad latinoamericana de ciencias sociales,licenciatura en producción de bioimagenes,2020-10-17,katherine,escobar,female,102,2520,la california,mcdonaldheather@hotmail.com
 223,facultad latinoamericana de ciencias sociales,licenciatura en relaciones del trabajo,2020-09-18,cynthia,ramos,female,2,8347,arroyo cahunco,figueroajoshua@gmail.com
-224,facultad latinoamericana de ciencias sociales,licenciatura en ciencia política,2021-01-12,daniel,delacruz,male,70,5555,puente del inca,parkeralexis@yahoo.com
+224,facultad latinoamericana de ciencias sociales,licenciatura en ciencia política,2021-01-12,daniel,delacruz,male,71,5555,puente del inca,parkeralexis@yahoo.com
 225,facultad latinoamericana de ciencias sociales,licenciatura en psicología,2020-12-20,maria,powell,female,19,1737,kilometro 77,harrisstephanie@yahoo.com
 226,facultad latinoamericana de ciencias sociales,licenciatura en administración,2020-12-24,bryan,branch,male,112,3486,villa olivari,ajones@yahoo.com
 227,facultad latinoamericana de ciencias sociales,licenciatura en kinesiología y fisiatría,2020-09-30,daniel,zuniga,male,97,2760,colonia los tres usaris,hthompson@hotmail.com
@@ -1182,7 +1182,7 @@
 1180,facultad latinoamericana de ciencias sociales,licenciatura en ciencias de la computación,2020-09-16,stacy,roberts,female,50,5537,algarrobito,lindajohnson@yahoo.com
 1181,facultad latinoamericana de ciencias sociales,licenciatura en ciencias ambientales,2021-01-01,brian,leblanc,male,112,6338,leubuco,thomaslisa@gmail.com
 1182,facultad latinoamericana de ciencias sociales,licenciatura en ciencias geológicas,2020-11-26,elizabeth,ortiz,female,112,1625,arroyo canelon,cooperjohn@hotmail.com
-1183,facultad latinoamericana de ciencias sociales,medicina,2021-01-31,christopher,keith,male,7,5541,algarrobal abajo,kellyjones@hotmail.com
+1183,facultad latinoamericana de ciencias sociales,medicina,2021-01-31,christopher,keith,male,8,5541,algarrobal abajo,kellyjones@hotmail.com
 1184,facultad latinoamericana de ciencias sociales,licenciatura en relaciones del trabajo,2020-10-30,mitchell,henderson,male,110,6463,alagon,john12@yahoo.com
 1185,facultad latinoamericana de ciencias sociales,licenciatura en ciencias de la computación,2020-11-30,janice,fletcher,female,40,5363,anguinan,joseramirez@gmail.com
 1186,facultad latinoamericana de ciencias sociales,contador público,2020-09-29,michael,rodriguez,male,47,2124,22 de mayo,brandy57@hotmail.com
@@ -1413,7 +1413,7 @@
 1411,facultad latinoamericana de ciencias sociales,licenciatura en planificación y diseño del paisaje,2020-09-21,george,shannon,male,53,7203,chapaleufu,jessica14@gmail.com
 1412,facultad latinoamericana de ciencias sociales,licenciatura en sociología,2021-01-05,thomas,price,male,106,2111,francisco paz,djones@yahoo.com
 1413,facultad latinoamericana de ciencias sociales,licenciatura en producción de bioimagenes,2020-12-06,carl,cole,male,31,1882,ezpeleta este,kimberly39@yahoo.com
-1414,facultad latinoamericana de ciencias sociales,licenciatura en ciencias antropológicas,2020-11-29,adrian,mann,male,59,8111,arroyo pareja,fsalazar@hotmail.com
+1414,facultad latinoamericana de ciencias sociales,licenciatura en ciencias antropológicas,2020-11-29,adrian,mann,male,60,8111,arroyo pareja,fsalazar@hotmail.com
 1415,facultad latinoamericana de ciencias sociales,técnico para bioterios,2020-11-20,joseph,jones,male,49,9030,rio mayo,schneidertraci@gmail.com
 1416,facultad latinoamericana de ciencias sociales,bioquímica,2020-09-03,john,cruz,male,25,3363,25 de mayo,toddjones@hotmail.com
 1417,facultad latinoamericana de ciencias sociales,licenciatura en administración,2020-12-27,john,hines,male,109,4716,amadores,joejohnston@hotmail.com
@@ -1810,7 +1810,7 @@
 1808,facultad latinoamericana de ciencias sociales,diseño industrial,2020-10-23,kelly,banks,female,67,7406,aldecon,kgreen@gmail.com
 1809,facultad latinoamericana de ciencias sociales,actuario,2020-10-08,tabitha,lawrence,female,86,2315,estacion saguier,gatesalexander@gmail.com
 1810,facultad latinoamericana de ciencias sociales,bioquímica,2020-10-14,michael,chavez,male,92,6058,pazos kanki,aobrien@hotmail.com
-1811,facultad latinoamericana de ciencias sociales,licenciatura en planificación y diseño del paisaje,2020-11-30,jason,smith,male,2,5733,cramer,amanda32@yahoo.com
+1811,facultad latinoamericana de ciencias sociales,licenciatura en planificación y diseño del paisaje,2020-11-30,jason,smith,male,3,5733,cramer,amanda32@yahoo.com
 1812,facultad latinoamericana de ciencias sociales,contador público,2020-12-31,mark,warren,male,2,4182,campo la flor los ralos,ncasey@gmail.com
 1813,facultad latinoamericana de ciencias sociales,ingeniería electrónica,2021-01-14,sherry,bond,female,20,7109,barrio pedro rocco,dean30@gmail.com
 1814,facultad latinoamericana de ciencias sociales,diseño de imagen y sonido,2020-10-22,jessica,lloyd,female,33,5731,alfaland,gregory15@yahoo.com
@@ -1850,7 +1850,7 @@
 1848,facultad latinoamericana de ciencias sociales,licenciatura en ciencias de la educación,2020-10-19,angela,fitzgerald,female,108,5315,calera la norma,stephanie39@hotmail.com
 1849,facultad latinoamericana de ciencias sociales,licenciatura en kinesiología y fisiatría,2020-09-15,samantha,kelly,female,60,5707,aguaditas,michaelfreeman@yahoo.com
 1850,facultad latinoamericana de ciencias sociales,licenciatura en gestión de agroalimentos,2020-10-09,matthew,cruz,male,32,3732,colonia abate,calebdaniels@hotmail.com
-1851,facultad latinoamericana de ciencias sociales,diseño de imagen y sonido,2021-01-22,kathy,henderson,female,78,5421,la tranca,christopher76@gmail.com
+1851,facultad latinoamericana de ciencias sociales,diseño de imagen y sonido,2021-01-22,kathy,henderson,female,79,5421,la tranca,christopher76@gmail.com
 1852,facultad latinoamericana de ciencias sociales,ingeniería electrónica,2021-01-12,christopher,west,male,94,7300,azul,ugamble@hotmail.com
 1853,facultad latinoamericana de ciencias sociales,ciencias veterinarias,2020-12-05,chelsea,noble,female,8,7241,la porteña,williamstami@hotmail.com
 1854,facultad latinoamericana de ciencias sociales,licenciatura en administración,2021-01-05,john,tate,male,10,4605,alisos  de abajo,hollydaniel@yahoo.com
@@ -1869,7 +1869,7 @@
 1867,facultad latinoamericana de ciencias sociales,licenciatura en musicoterapia,2020-09-04,william,fernandez,male,106,3454,bañado san antonio,tdawson@gmail.com
 1868,facultad latinoamericana de ciencias sociales,licenciatura en kinesiología y fisiatría,2020-11-30,amanda,mcgee,female,113,2905,general rojo,fcrawford@yahoo.com
 1869,facultad latinoamericana de ciencias sociales,licenciatura en ciencias geológicas,2020-12-09,crystal,henderson,female,87,4115,agua azul,pschmidt@yahoo.com
-1870,facultad latinoamericana de ciencias sociales,actuario,2020-09-04,nathaniel,miller,male,34,2257,colonia belgrano,brownalicia@yahoo.com
+1870,facultad latinoamericana de ciencias sociales,actuario,2020-09-04,nathaniel,miller,male,35,2257,colonia belgrano,brownalicia@yahoo.com
 1871,facultad latinoamericana de ciencias sociales,licenciatura en ciencias de la educación,2020-12-25,timothy,fox,male,58,6305,atreuco,iyork@gmail.com
 1872,facultad latinoamericana de ciencias sociales,licenciatura en musicoterapia,2020-10-25,john,dixon,male,108,1650,general san martin,jonesmichael@hotmail.com
 1873,facultad latinoamericana de ciencias sociales,licenciatura en artes,2020-09-07,jill,mcintyre,female,86,5319,colpes,crystal20@yahoo.com

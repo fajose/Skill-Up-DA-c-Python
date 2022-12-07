@@ -1,13 +1,21 @@
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
 class Loader:
-    def __init__(self, university, logger=None) -> None:
+    def __init__(
+        self,
+        university,
+        logger=None,
+        S3_ID='aws_s3_bucket',
+        dest_bucket='alkemy26',
+        path='./datasets/'
+        ) -> None:
+
         self.university = university
         self.logger = logger
 
-        self.S3_ID = "aws_s3_bucket"
-        self.dest_bucket = 'alkemy26'
-        self.path = './datasets/'
+        self.S3_ID = S3_ID
+        self.dest_bucket = dest_bucket
+        self.path = path
         self.key = f'{self.university}_process.txt'
         
     def loading(self):
