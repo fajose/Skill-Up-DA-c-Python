@@ -37,9 +37,9 @@ with DAG(f'{university}_dag_etl',
         df_transformer = Transformer(university, logger=logger, date_format=date_format)
         df_transformer.to_transform()
 
-    @task()
+    """@task()
     def load(**kwargd):
         df_loader = Loader(university, logger=logger, S3_ID=aws_conn, dest_bucket=dest_bucket)
-        df_loader.to_load()
+        df_loader.to_load()"""
     
-    extract() >> transform() >> load()
+    extract() >> transform()

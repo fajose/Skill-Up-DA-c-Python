@@ -1,6 +1,6 @@
 SELECT university, 
 	   career, 
-	   to_date(inscription_date, 'YYYY/MM/DD') AS inscription_date, 
+	   inscription_date AS inscription_date, 
 	   nombre AS first_name, 
 	   NULL AS last_name, 
 	   sexo AS gender, 

@@ -1,7 +1,7 @@
 SELECT
 	universidad AS university, 
 		careers AS career, 
-		to_date(fecha_de_inscripcion, 'DD/MOM/YY') AS inscription_date, 
+		fecha_de_inscripcion AS inscription_date, 
 		names AS first_name, 
 		NULL AS last_name, 
 		sexo AS gender, 
